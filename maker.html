@@ -83,22 +83,31 @@
             <p>Укажите предполагаемые даты поездки<br>
                 И мы покажем вам лучшие предложения гостиницы в седоне</p>
             <!-- <h3>Поиск гостиницы в Седоне</h3> Это кнопка -->
+            <!-- Лиз я не понял как сделать Заголовок кнопкой -->
+            <h3><button type="button" value="Поиск гостиницы в Седоне"></button></h3>
             <form action="html" method="post">
-                <p><label for="calendar">Дата заезда</label>
-                    <input type="date" name="calendar" id="calendar">
-                    <button aria-label="календарь"></button>
+                <p><label for="input-calendar" id="input-calendar">Дата заезда</label>
+                    <input type="date" name="calendar" id="input-calendar" aria-labelledby="input-calendar"
+                        aria-required="true" required>
+                    <!-- Ниже кнопка с картинкой календарём  не понял как её поместить-->
+                    <button type="calendar" aria-label="календарь"></button>
                 </p>
-                <p><label for="calendar">Дата выезда</label>
-                    <input type="date" name="calendar" id="calendar"> </p>
-                <p><label for="nubmer">взрослые</label>
-                    <input type="number" min="1" max="10" step="1"></p>
-                <p><label for="nubmer">дети</label>
-                    <input type="number" min="1" max="10"></p>
+                <p><label for="calendar" id="input-calendar">Дата выезда</label>
+                    <input type="date" name="calendar" id="input-calendar" aria-labelledby="input-calendar"
+                        aria-required="true" required></p>
+                <!-- Ниже кнопка с календарём  не понял как её поместить-->
+                <button type="calendar" aria-label="календарь"></button>
+                <p><label for="nubmer" id="input-number">взрослые</label>
+                    <input type="number" min="1" max="10" step="1" id="input-number" aria-labelledby="input-calendar"
+                        aria-required="true" required></p>
+                <p><label for="number" id="input-number">дети</label>
+                    <input type="number" min="1" max="10" id="input-number" aria-labelledby="input-number"></p>
                 <input type="submit" value="Найти">
             </form>
         </section>
     </main>
     <footer>
+        <h3 class="visual-hidden">Ссылки на социальные сети</h3>
         <a href="instagram.com">#visitsedona</a>
         <ul>
             <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
