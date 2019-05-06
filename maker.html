@@ -10,11 +10,13 @@
 
 <body>
     <header>
+        <img src=".png" alt="logo">
         <nav>
             <ul>
                 <li><a href="html">Фото и видо</a></li>
-                <li><img src=".png" alt="logo"></li>
                 <li><a href=".html">Карта штата</a></li>
+                <!--Ссылка без href перестаёт бысть ссылкой но служить для однообразия разметк и в списке
+                и между страницами  -->
                 <li><a href=".html">Информация</a></li>
                 <li><a href=".html">Гостиницы</a></li>
             </ul>
@@ -22,21 +24,19 @@
     </header>
     <main>
         <section>
-            <section>
-                <img src=".png" alt="Sedona">
-                <h1>Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
-                <p>Рассмотрим 5 причин по которой седона круче чем гранд каньон</p>
-            </section>
-            <section>
-                <section>
-                    <h2>Настоящий городок</h2>
-                    <p>-№1-</p>
-                    <p>Седона не атракцин для туристов -там течет своя жизнь</p>
-                </section>
-                <section>
-                    <img src=".png" alt="Седона">
-                </section>
-            </section>
+            <img src=".png" alt="Sedona">
+            <h1>Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин по которой седона круче чем гранд каньон</p>
+        </section>
+        <section>
+            <div>
+                <h2>Настоящий городок</h2>
+                <p>-№1-</p>
+                <p>Седона не атракцин для туристов -там течет своя жизнь</p>
+            </div>
+            <img src=".png" alt="Седона">
+        </section>
+        <section>
             <section>
                 <img src=".png" alt="Дом">
                 <h3>Жилье</h3>
@@ -54,16 +54,14 @@
             </section>
         </section>
         <section>
-            <section>
-                <img src=".png" alt="дорога">
-            </section>
-            <section>
-                <section>
-                    <h2>Там есть мост дьявола</h2>
-                    <p>-№2-</p>
-                    <p>Да,По не могу можно пройти если конечно вы осмелитесь</p>
-                </section>
-            </section>
+            <img src=".png" alt="дорога">
+            <div>
+                <h2>Там есть мост дьявола</h2>
+                <p>-№2-</p>
+                <p>Да,По не могу можно пройти если конечно вы осмелитесь</p>
+            </div>
+        </section>
+        <section>
             <section>
                 <h3>Не большая площадь</h3>
                 <p>-№3-</p>
@@ -80,42 +78,35 @@
                 <p>Большинство едет в гранд каньон и толпятся там</p>
             </section>
         </section>
-        </section>
         <section>
             <h2>Заинтресовались ?</h2>
-            <p>Укажите предполагаемые даты поездки </p>
-            <p>И мы покажем вам лучшие предложения гостиницы в седоне</p>
-        </section>
-        <section>
-            <header>
-                Поиск гостиницы в Седоне
-            </header>
+            <p>Укажите предполагаемые даты поездки<br>
+                И мы покажем вам лучшие предложения гостиницы в седоне</p>
+            <!-- <h3>Поиск гостиницы в Седоне</h3> Это кнопка -->
             <form action="html" method="post">
                 <p><label for="calendar">Дата заезда</label>
                     <input type="date" name="calendar" id="calendar">
+                    <button aria-label="календарь"></button>
                 </p>
                 <p><label for="calendar">Дата выезда</label>
-                    <input type="date" name="calendar" id="calendar">
-
-                    <p><label for="nubmer">взрослые</label>
-                        <input type="number" min="1" max="10" step="1">
-                        <p><label for="nubmer">дети</label>
-                            <input type="number" min="1" max="10">
-                        </p>
-                        <input type="submit" value="Найти">
+                    <input type="date" name="calendar" id="calendar"> </p>
+                <p><label for="nubmer">взрослые</label>
+                    <input type="number" min="1" max="10" step="1"></p>
+                <p><label for="nubmer">дети</label>
+                    <input type="number" min="1" max="10"></p>
+                <input type="submit" value="Найти">
             </form>
         </section>
-        <footer>
-            <a href="instagram.com">#visitsedona</a>
-            <ul>
-                <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
-                <li><a href="https://ru-ru.facebook.com/"><img src=".png" alt="Facebook"></a></li>
-                <li><a href="youtobe"><img src=".png" alt="messenger"></a></li>
-            </ul>
-            <p>Website by</p>
-            <a href="https://htmlacademy.ru/"><img src=".png" alt="Академия">htmlacademy</a>
-        </footer>
     </main>
+    <footer>
+        <a href="instagram.com">#visitsedona</a>
+        <ul>
+            <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
+            <li><a href="https://ru-ru.facebook.com/"><img src=".png" alt="Facebook"></a></li>
+            <li><a href="youtobe"><img src=".png" alt="messenger"></a></li>
+        </ul>
+        <p>Website by<a href="https://htmlacademy.ru/"><img src=".png" alt="Академия">htmlacademy</a></p>
+    </footer>
 </body>
 
 </html>

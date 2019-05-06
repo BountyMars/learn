@@ -10,26 +10,32 @@
 
 <body>
     <header>
+        <div class="logo">
+            <img src="menu.html" alt="две скобочки">
+        </div>
         <nav>
-            <li><a href="menu.html">На главную</a></li>
-            <li><a href="menu.html">Пицы</a></li>
-            <li><img src="menu.html" alt="две скобочки"></li>
-            <li><a href="menu.html">Акции</a></li>
-            <li><a href="menu.html">Контакты</a></li>
+            <ul>
+                <li><a href="menu.html">На главную</a></li>
+                <li><a href="menu.html">Пицы</a></li>
+                <li><a href="menu.html">Акции</a></li>
+                <li><a href="menu.html">Контакты</a></li>
+            </ul>
         </nav>
     </header>
     <main>
+        <h1 class="visual-hidden">Две скобочки</h1>
         <section>
             <h2>Есть вопросы пиши нам</h2>
         </section>
         <section>
-            <img src=".png" alt="gps">
+            <h2 class="visual-hidden">Карта с координатами</h2>
+            <img src=".png" alt="Навгиционная карта ">
             <h3>Gps координаты</h3>
             <p>Устал есть одни и те же пиццы?Выбери любые ингредиенты и собери свою пиццу!</p>
             <button type="button">найти</button>
         </section>
         <section>
-            Карту с координаторами вставлю позже
+            <img src=".png" alt="Карта">
         </section>
         <section>
             <section>
@@ -37,75 +43,68 @@
                 <form action=".html" method="post">
                     <p>
                         <img src=".png" alt="ава">
-                        <label>
-                            <input type="text" placeholder="имя">
-                            Имя
-                        </label>
-                        <p>
-                            <img src=".png" alt="ава">
-                            <label for="email">Электропочта</label>
-                            <input type="email" id="email" placeholder="email">
-                        </p>
-                        <p>
-                            <img src=".png" alt="ава">
-                            <label for="email">Для телефона</label>
-                            <input type="tel" id="tel" placeholder="для телефона">
-                        </p>
-                        <p>
-                            <label for="comment">Сообщение</label>
-                            <textarea name="comment" id="comment" cols="30" rows="10"
-                                placeholder="сообщение"></textarea>
-                        </p>
-                        <button type="submit">отправить</button>
+                        <label for="input-name" id="input-name">Имя</label>
+                            <input type="text" id="input-name" placeholder="имя" aria-labelledby="input-name" aria-required="true" required >
+                    </p>
+                    <p>
+                        <img src=".png" alt="ава">
+                        <label for="email" id="input-email">Электропочта</label>
+                        <input type="email" id="input-email" placeholder="email" aria-labelledby="input-name" aria-required="true" required>
+                    </p>
+                    <p>
+                        <img src=".png" alt="ава">
+                        <label for="input-tel" id="input-tel">Для телефона</label>
+                        <input type="tel" id="input-tel" placeholder="для телефона"  aria-labelledby="input-tel" aria-required="true" required>
+                    </p>
+                    <p>
+                        <label for="input-comment" id="input-comment">Сообщение</label>
+                        <textarea name="comment" id="input-comment" cols="30" rows="10" placeholder="сообщение" aria-labelledby="input-comment" aria-required="true"></textarea>
+                    </p>
+                    <button type="submit">отправить</button>
                 </form>
             </section>
-            <aside>
-                <h3>Мы легко находимся</h3>
-                <p>Санкт-Петербург</p>
-                <p>Миллионная,4/1(вход с аптекарского переулка)</p>
-                <p>код на воротах 2488</p>
-                <p>приходите на чаек-кофеек и печеньки</p>
-            </aside>
-            <aside>
-                <h3>Контакты</h3>
-                <ul>
-                    <li>
-                        <div>
-                            <p>Тел:</p>
-                            <a href=".html">7 931 206 53 11</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>Fax</p>
-                            <a href=".html">7 931 206 53 11</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>email</p>
-                            <a href="info@kapodastrom.ru">info@kapodastrom.ru</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li><a href=".hrml">задать вопрос</a></li>
-                    <li><a href=".html">узнать как кодить</a></li>
-                    <li><a href=".html">чем отличается сыр от</a></li>
-                    <li><a href=".html">в чем смысл верстки</a></li>
-                    <li><a href=".html">как стать другом дизайнера</a></li>
-                    <li><a href=".html">почему я люблю пиццу с сыром</a></li>
-                    <li><a href=".html">как спать по ночам</a></li>
-                </ul>
-            </aside>
+        </section>
+        <aside>
+            <h3>Мы легко находимся</h3>
+            <p>Санкт-Петербург</p>
+            <p>Миллионная,4/1(вход с аптекарского переулка)</p>
+            <p>код на воротах 2488</p>
+            <p>приходите на чаек-кофеек и печеньки</p>
+        </aside>
+        <aside>
+            <h3>Контакты</h3>
+            <ul>
+                <li>
+                    <p>Тел:</p><a href=".html">7 931 206 53 11</a>
+                </li>
+                <li>
+                    <p>Fax</p><a href=".html">7 931 206 53 11</a>
+                </li>
+                <li>
+                    <p>email</p><a href="info@kapodastrom.ru">info@kapodastrom.ru</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href=".hrml">задать вопрос</a></li>
+                <li><a href=".html">узнать как кодить</a></li>
+                <li><a href=".html">чем отличается сыр от</a></li>
+                <li><a href=".html">в чем смысл верстки</a></li>
+                <li><a href=".html">как стать другом дизайнера</a></li>
+                <li><a href=".html">почему я люблю пиццу с сыром</a></li>
+                <li><a href=".html">как спать по ночам</a></li>
+            </ul>
+        </aside>
         </section>
 
         <footer>
+            <h3 class="visual-hidden">Ссылки на социальные сети</h3>
             <ul>
-                <li><a href="https://ru-ru.facebook.com/"><img src=".png" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
-                <li><a href="mhttps://twitter.com/?lang=ru"><img src=".png" alt="messenger"></a></li>
-                <li><a href="messenger.com"><img src=".png" alt="messenger"></a></li>
+                <li><a href="https://ru-ru.facebook.com/" aria-label="Ссылка на Facebook"><img src=".png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://twitter.com" aria-label="Ссылка на Твиттер"><img src=".png" alt="Твиттер"></a></li>
+                <li><a href="mhttps://twitter.com/?lang=ru" aria-label="Ссылка на Твиттер"><img src=".png"
+                            alt="messenger"></a></li>
+                <li><a href="messenger.com" aria-label="Ссылка на Твиттер"><img src=".png" alt="messenger"></a></li>
             </ul>
             <p>Все права защищены</p>
             <p>Сверстано с любовью Ярославом Каподастром</p>
