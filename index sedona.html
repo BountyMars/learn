@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=".maker.html"><img src=".png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="html">Фото и видо</a></li>
+                <li><a href=".html">Карта штата</a></li>
+                <!--Ссылка без href перестаёт бысть ссылкой но служить для однообразия разметк и в списке
+                    и между страницами  -->
+                <li><a href=".html">Информация</a></li>
+                <li><a href=".html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src=".png" alt="Sedona">
+            <h1>Седона - небольшой городок в аризоне,заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин по которой седона круче чем гранд каньон</p>
+        </section>
+        <section>
+            <div>
+                <h2>Настоящий городок</h2>
+                <p>-№1-</p>
+                <p>Седона не атракцин для туристов -там течет своя жизнь</p>
+            </div>
+            <img src=".png" alt="Седона">
+        </section>
+        <section>
+            <section>
+                <img src=".png" alt="Дом">
+                <h3>Жилье</h3>
+                <p>рекомендуем пожить в настоящем мотеле всё как в кино</p>
+            </section>
+            <section>
+                <img src=".png" alt="Гамбургер">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь</p>
+            </section>
+            <section>
+                <img src=".png" alt="Сувениры">
+                <h3>Сувениры</h3>
+                <p>Не только китайского,но и местного производства</p>
+            </section>
+        </section>
+        <section>
+            <img src=".png" alt="дорога">
+            <div>
+                <h2>Там есть мост дьявола</h2>
+                <p>-№2-</p>
+                <p>Да,По не могу можно пройти если конечно вы осмелитесь</p>
+            </div>
+        </section>
+        <section>
+            <section>
+                <div>
+                    <h3>Не большая площадь</h3>
+                    <p>-№3-</p>
+                    <p>Все достопримечательности находятся близко</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>Красивая дорога</h3>
+                    <p>-№4-</p>
+                    <p>Ехать в седоне из леса в лес совсем не скучно</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h3>Мало туристов</h3>
+                    <p>-№5-</p>
+                    <p>Большинство едет в гранд каньон и толпятся там</p>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h2>Заинтресовались ?</h2>
+            <p>Укажите предполагаемые даты поездки ,<br>
+                И мы покажем вам лучшие предложения гостиницы в седоне</p>
+            <!-- <h3>Поиск гостиницы в Седоне</h3> Это кнопка -->
+            <button type="button">Поиск гостиницы в седоне</button>
+            <form action="html" method="post">
+                <p>
+                    <label for="input-calendar" id="label-number">Дата заезда</label>
+                    <input type="date" name="calendar" id="input-calendar" aria-labelledby="label-number"
+                        aria-required="true" required>
+                    <!-- Ниже кнопка с картинкой календарём  не понял как её поместить-->
+                    <button type="calendar" aria-label="календарь"></button>
+                </p>
+                <p><label for="calendar" id="label-calendar">Дата выезда</label>
+                    <input type="date" name="calendar" id="input-calendar" aria-labelledby="label-calendar"
+                        aria-required="true" required></p>
+                <!-- Ниже кнопка с календарём  не понял как её поместить-->
+                <button type="calendar" aria-label="календарь"></button>
+                <p><label for="nubmer" id="label-number">взрослые</label>
+                    <input type="number" min="1" max="10" step="1" id="input-number" aria-labelledby="label-number"
+                        aria-required="true" required></p>
+                <p><label for="number" id="label-number">дети</label>
+                    <input type="number" min="1" max="10" id="input-number" aria-labelledby="label-number"></p>
+                <input type="submit" value="Найти">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3 class="visual-hidden">Ссылки на социальные сети</h3>
+        <a href="instagram.com">#visitsedona</a>
+        <ul>
+            <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
+            <li><a href="https://ru-ru.facebook.com/"><img src=".png" alt="Facebook"></a></li>
+            <li><a href="youtobe"><img src=".png" alt="messenger"></a></li>
+        </ul>
+        <h3 class="visual-hidden">Автор ссайта</h3>
+        <p>Website by<a href="https://htmlacademy.ru/"><img src=".png" alt="Академия">htmlacademy</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=".maker.html"><img src=".png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="html">Фото и видо</a></li>
+                <li><a href=".html">Карта штата</a></li>
+                <!--Ссылка без href перестаёт бысть ссылкой но служить для однообразия разметк и в списке
+                                                    и между страницами  -->
+                <li><a href=".html">Информация</a></li>
+                <li><a href=".html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action=".html" method="post">
+                <fieldset>
+                    <legend>Инфроструктура:</legend><br>
+                    <div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Бассейн</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Парковка</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Wi-FI</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип Жилья:</legend><br>
+                    <div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Гостиница</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Мотель</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                        <div>
+                            <label for="input-checkbox" id="label-checkbox">Аппортаменты</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="subscribe" id="input-checkbox"
+                                aria-labelledby="lebel-checkbox">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки(р):</legend><br>
+                    <div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td>от 0</td>
+                                    <td>до 3000</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <input type="range" name="cost" id="input-range">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <header>
+            <h2>Найдено:3</h2>
+            <span>сортировка</span>
+            <nav>
+                <ul>
+                    <li><a href=".html"></a>по цене</li>
+                    <li><a href=".html"></a>по типу</li>
+                    <li><a href=".html"></a>по рейтингу</li>
+                </ul>
+            </nav>
+            <button type="button" aria-label="Кнопка вверх" tabindex="13">&#9660</button>
+            <button type="button" aria-label="Кнопка в низ" tabindex="14">&#9650</button>
+        </header>
+        <arttcile>
+            <section>
+                <aside><img src=".png" alt="Фото амаро резорт"></aside>
+                <h3>Amaro Resort & Spa</h3>
+                <span>Гостиница от 4000р</span>
+                <div>
+                    <div>
+                        <a href=".html">подробнее</a>
+                    </div>
+                    <div>
+                        <a href=".html">забронировать</a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src=".png" alt="одна звезда"></li>
+                        <li><img src=".png" alt="две звезда"></li>
+                        <li><img src=".png" alt="три звезда"></li>
+                        <li><img src=".png" alt="четыре звезда"></li>
+                    </ul>
+                </div>
+                <span>рейтинг 8,5</span>
+            </section>
+        </arttcile>
+        <arttcile>
+            <section>
+                <aside><img src=".png" alt="Фото амаро резорт"></aside>
+                <h3>Desert Quil inn</h3>
+                <span>Мотель от 3000р</span>
+                <div>
+                    <div>
+                        <a href=".html">подробнее</a>
+                    </div>
+                    <div>
+                        <a href=".html">забронировать</a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src=".png" alt="одна звезда"></li>
+                        <li><img src=".png" alt="две звезда"></li>
+                        <li><img src=".png" alt="три звезда"></li>
+                    </ul>
+                </div>
+                <span>рейтинг 8,9</span>
+            </section>
+        </arttcile>
+        <arttcile>
+            <section>
+                <aside><img src=".png" alt="Фото амаро резорт"></aside>
+                <h3>Villas at poco diablo</h3>
+                <span>Аппартаменты от 2000</span>
+                <div>
+                    <div>
+                        <a href=".html">подробнее</a>
+                    </div>
+                    <div>
+                        <a href=".html">забронировать</a>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src=".png" alt="одна звезда"></li>
+                        <li><img src=".png" alt="две звезда"></li>
+                    </ul>
+                </div>
+                <span>рейтинг 9,2</span>
+            </section>
+        </arttcile>
+    </main>
+    <footer>
+        <h3 class="visual-hidden">Ссылки на социальные сети</h3>
+        <a href="instagram.com">#visitsedona</a>
+        <ul>
+            <li><a href="https://twitter.com"><img src=".png" alt="Твиттер"></a></li>
+            <li><a href="https://ru-ru.facebook.com/"><img src=".png" alt="Facebook"></a></li>
+            <li><a href="youtobe"><img src=".png" alt="messenger"></a></li>
+        </ul>
+        <h3 class="visual-hidden">Автор ссайта</h3>
+        <p>Website by<a href="https://htmlacademy.ru/"><img src=".png" alt="Академия">htmlacademy</a></p>
+    </footer>
+</body>
+
+</html>
